@@ -1,0 +1,37 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/
+
+# EF Core
+**/Migrations/*.designer.cs.user
+
+# Android / Gradle
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+captures/
+.cxx/
+
+# Node / misc
+node_modules/
+.DS_Store
+
+# Env — real secrets never get committed.
+# `.env.example` is the committed template; `.env` is local and gitignored.
+.env
+.env.local
+*.env.local
+!.env.example
+
+# Claude Code local settings — contain project-local bash allow-lists
+# and may include machine-specific IPs / paths.
+.claude/
+
+# Seed files with private content. Keep `*.example.sql` committed.
+db/*.local.sql

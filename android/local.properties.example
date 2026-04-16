@@ -1,0 +1,21 @@
+# Copy this file to `local.properties` and fill in your values.
+# `local.properties` is gitignored by default in Android Studio projects.
+#
+# Android Studio will manage `sdk.dir` automatically the first time you open
+# the project — you don't need to set it by hand.
+
+# ─── QuizMemo API base URL ────────────────────────────────
+# Where the Android app sends requests. Pick one:
+#
+#   Emulator (AVD):   http://10.0.2.2:8080/
+#   Physical device:  http://<your-PC-LAN-IP>:5080/
+#
+# For a physical phone over Wi-Fi, find your PC's LAN IP with `ipconfig`
+# and make sure the Windows Firewall allows inbound on that port.
+quizmemo.api.baseUrl=http://10.0.2.2:8080/
+
+# ─── Google Sign-In Web Client ID ─────────────────────────
+# OAuth 2.0 *Web application* client ID from Google Cloud Console.
+# Must match Google:ClientId in the backend (user-secrets or .env).
+# Create it at: https://console.cloud.google.com/apis/credentials
+quizmemo.google.webClientId=REPLACE-WITH-WEB-OAUTH-CLIENT-ID.apps.googleusercontent.com
